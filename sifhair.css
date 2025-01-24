@@ -1,0 +1,172 @@
+body{
+    margin:0;
+}
+
+#nav div, button{
+    height:70px;
+    width:200px;
+    background-color:black;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+#about{
+    height: 650px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#cidadao{
+    height: 500px;;
+    background-color: black;
+}
+
+#servicos{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    font-size: large;
+    color: white;
+}
+
+#servicos p{
+    margin-bottom: 70px;
+}
+
+#divs{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    margin: 10px;
+    justify-content: center;
+}
+
+#s{
+    display: flex;
+    justify-content: space-between;
+}
+
+#secao1{
+    height: 550px;
+    background-color:white;
+    margin-right: 10px;
+}
+
+#secao5{
+    height: 550px;
+    background-color:white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#secao4{
+    height: 300px;
+    background-color:white;
+    margin-left: 10px;
+}
+
+#secao2{
+    height: 300px;
+    width: 290px;
+    background-color:white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#secao3{
+    height: 300px;
+    width: 290px;
+    background-color:white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#depoimentos{
+    min-height: 550PX;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 50px 20px; 
+    box-sizing: border-box;
+}
+
+#depoimentos #cliente{
+    display:flex;
+    gap:50px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+#depoimentos #cliente div{
+    height: 250px;
+    width: 400px;
+    background-color:black;
+}
+
+#galeria {
+    min-height: 650px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 50px 20px; 
+    box-sizing: border-box;
+}
+
+#galeria #galeria-texto{
+    padding-top:50px;
+}
+
+#galeria-imagens{
+    display:flex;
+    gap:50px;
+    margin: 50px;
+}
+
+@media (max-width: 768px){
+    #galeria-imagens {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+#galeria #galeria-imagens div{
+    min-height: 400px;
+    width: 300px;
+    background-color:white;
+}
+
+#contato{
+    min-height: 400px;
+    background-color: white;
+    margin:30px;
+    display: flex;
+    align-items:center;
+    justify-content:left;
+}
+
+@media (max-width: 768px){
+    #contato {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+footer{
+    height:200px;
+    background-color: black;
+}
