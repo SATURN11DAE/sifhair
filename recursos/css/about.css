@@ -1,0 +1,38 @@
+#about{
+    display: flex;
+    min-height: calc(100vh - 104px);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#shape{
+    background-color: var(--color-primary-2);
+    width: 50%;
+    min-height: 90vh;
+    border-radius: 30% 50% 0% 20%;
+}
+
+@media screen and (max-width: 1070px){
+    #about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shape{
+        display: none;
+    }
+    
+    #about-content{
+        text-align: center;
+        width: 80%;
+        min-height: 30vh;
+    }
+}

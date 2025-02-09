@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('about.css');
+@import url('services.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+:root{
+    --color-primary-1: #D9C7B8;
+    --color-primary-2: #D94343;
+    --color-primary-3: #CC2C2C;
+}
+
+* {
+    font-family: 'Yeseva One', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-primary-1);
+}
+
+section{
+    padding: 25px 8%;
+}
+
+.default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: var(--color-primary-2);
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.default:hover{
+    background-color: var(--color-primary-3);
+    color: #FDE1E1;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 55px;
+    background-color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    text-decoration:none;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-media a:hover{
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.section-title{
+    font-size: 3rem;
+    text-align: center;
+    color: #A07F36;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+}
