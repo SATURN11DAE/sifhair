@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('header.css');
+@import url('nav.css');
 @import url('home.css');
 @import url('about.css');
 @import url('services.css');
-@import url('testimonials.css');
+@import url('depoimentos.css');
 @import url('footer.css');
 
 :root{
     --color-primary-1: #D9C7B8;
     --color-primary-2: #D94343;
     --color-primary-3: #CC2C2C;
+    --color-primary-4: #8D732E;
 }
 
 * {
-    font-family: 'Yeseva One', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,6 +20,7 @@
 
 body{
     background-color: var(--color-primary-1);
+    overflow-x: hidden;
 }
 
 section{
@@ -61,20 +61,32 @@ section{
     background-color: white;
     font-size: 1.3rem;
     border-radius: 10px;
-    text-decoration:none;
+    text-decoration: none;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
-    color:#A07F36;
+    color: var(--color-primary-4);
 }
 
 .social-media a:hover{
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     transition: box-shadow .3s ease;
+}
+
+.section_title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    text-transform: uppercase;
 }
 
 .section-title{
     font-size: 3rem;
     text-align: center;
-    color: #A07F36;
+    color: var(--color-primary-1);
 }
 
 .subtitle{

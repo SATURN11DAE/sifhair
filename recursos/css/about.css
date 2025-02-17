@@ -1,6 +1,15 @@
+#divisor{
+    width: 100%;
+    background-image: url('../imagens/about.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #about{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--color-primary-2);
     display: flex;
-    min-height: calc(100vh - 104px);
     align-items: center;
     justify-content: space-between;
 }
@@ -10,13 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-#shape{
-    background-color: var(--color-primary-2);
-    width: 50%;
-    min-height: 90vh;
-    border-radius: 30% 50% 0% 20%;
+    color: white;
 }
 
 @media screen and (max-width: 1070px){

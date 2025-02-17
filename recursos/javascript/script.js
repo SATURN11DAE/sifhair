@@ -50,11 +50,12 @@ $(document).ready(function(){
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#services-title', {
+    ScrollReveal().reveal('.section_title', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
     });
+    
 
     ScrollReveal().reveal('#primeira', {
         origin: 'left',
@@ -68,8 +69,13 @@ $(document).ready(function(){
         distance: '20%'
     });
 
+    ScrollReveal().reveal('.testemunha-content', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
 
-    ScrollReveal().reveal('#testimonials', {
+    ScrollReveal().reveal('.feedbacks', {
         origin: 'right',
         duration: 2000,
         distance: '20%'
