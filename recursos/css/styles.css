@@ -71,9 +71,8 @@ section{
     transition: box-shadow .3s ease;
 }
 
-.section_title {
+.section_title{
     position: absolute;
-    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 3rem;
