@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sif Hair</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="recursos/css/styles.css">
         <script src="https://unpkg.com/scrollreveal"></script>
         <script>
             ScrollReveal({ reset: true });
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     </head>
     <body>
         <header>
@@ -22,22 +22,24 @@
 
                 <ul id="menu-list">
                     <li class="menu-item">
-                        <a href="#home active">Início</a>
+                        <a href="#home">Início</a>
                     </li>
                     <li class="menu-item">
                         <a href="#about">Sobre</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#divisor">Serviços</a>
+                        <a href="#services">Serviços</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#testimonials">Depoimentos</a>
+                        <a href="#divisor-depoimentos">Depoimentos</a>
                     </li>
                 </ul>
 
-                <button class="default">
-                    AGENDE JÁ
-                </button>
+                <a href="https://wa.me/5575981441784" target='_blank' class="agenda">
+                    <button class="default">
+                        AGENDE JÁ
+                    </button>
+                </a>
 
                 <button id="mobile-btn">
                     <i class="fa-solid fa-bars"></i>
@@ -48,21 +50,19 @@
                 <ul id="menu-list-mobile">
                     <li class="menu-item">
                         <a href="#home">Início</a>
-                    </li>
                     <li class="menu-item">
                         <a href="#about">Sobre</a>
-                    </li>
                     <li class="menu-item">
                         <a href="#services">Serviços</a>
-                    </li>
                     <li class="menu-item">
-                        <a href="#testimonials">Depoimentos</a>
-                    </li>
+                        <a href="#depoimentos">Depoimentos</a>
                 </ul>
 
-                <button class="default">
-                    AGENDE JÁ
-                </button>
+                <a href="https://wa.me/5575981441784" target='_blank' class="agenda">
+                    <button class="default">
+                        AGENDE JÁ
+                    </button>
+                </a>
             </div>
         </header>
 
@@ -79,14 +79,14 @@
                     </p>
 
                     <div id="cta-btn">
-                        <a href="https://wa.me/5575982987114" id="numero">
+                        <a href="https://wa.me/5575981441784" id="numero" target='_blank'>
                             <button class="default" id="phone">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </button>
                             (75) 98144-1784
                         </a>
                         <div class="social-media">
-                            <a href="https://www.instagram.com/rosiellendepaula/" target="_blank">
+                            <a href="https://www.instagram.com/sifhair25/" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                             <a href="https://www.facebook.com/rosiellendepaulasifhair/" target="_blank">
@@ -101,7 +101,9 @@
             </section>
 
             <section id="about">
-                <div id="shape"></div>
+                <div id="forma">
+                    <img src="recursos/imagens/about.png" alt="">
+                </div>
                 <div id="about-content">
                     <h2 class="section-title">
                         Rosiellen de Paula
@@ -113,220 +115,222 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo, officia exercitationem quos debitis veritatis ducimus cumque nulla accusamus saepe officiis aliquid porro sunt, dolorem, doloribus in blanditiis corrupti voluptates.
                     </p>
                 </div>
+            </section>            
+
+            <section class="services swiper" id="services">
+                <div class="divisor3"></div>
+                <h2 id="services-title">Serviços</h2>
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/troy.png" alt="troia" class="card-image">
+                                <h2 class="card-title">Saga de Tróia</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/polifemo.png" alt="ciclope" class="card-image">
+                                <h2 class="card-title">Saga do Ciclope</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/ocean.png" alt="oceano" class="card-image">
+                                <h2 class="card-title">Saga do Oceano</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/circe.png" alt="circe" class="card-image">
+                                <h2 class="card-title">Saga da Circe</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/hades.png" alt="submundo" class="card-image">
+                                <h2 class="card-title">Saga do Submundo</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/thunder.png" alt="trovao" class="card-image">
+                                <h2 class="card-title">Saga do Trovão</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/wisdom.png" alt="sabedoria" class="card-image">
+                                <h2 class="card-title">Saga da Sabedoria</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/vengeance.png" alt="vinganca" class="card-image">
+                                <h2 class="card-title">Saga da Vingança</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+    
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="recursos/imagens/ithaca.png" alt="ithaca" class="card-image">
+                                <h2 class="card-title">Saga de Ítaca</h2>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque distinctio nulla debitis saepe eveniet consequuntur quibusdam quidem enim deleniti quo!</p>
+                                <button class="card-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                    
+                </div>
+                
+                <div id="divisor-depoimentos"></div>
             </section>
 
-            <h2 id="services-title">Serviços</h2>
-
-            <section id="services">
-                <div class="services swiper">
-                    <div class="card-wrapper">
-                        <ul class="card-list swiper-wrapper">
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/troy.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga de Tróia</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/polifemo.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga do Ciclope</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/ocean.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga do Oceano</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/circe.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga da Circe</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/hades.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga do Submundo</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href='' class="card-link">
-                                    <img src="recursos/imagens/thunder.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga do Trovão</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/wisdom.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga da Sabedoria</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/vengeance.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga da Vingança</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-            
-                            <li class="card-item swiper-slide">
-                                <a href="" class="card-link">
-                                    <img src="recursos/imagens/ithaca.png" alt="">
-                                    <div class="text">
-                                        <h2 class="title">Saga de Ítaca</h2>
-                                        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore minus laborum omnis ad iste, optio dolorem, alias fuga odio animi est beatae.</p>
-                                    </div>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-            
-                        <!-- Paginação -->
-                        <div class="swiper-pagination"></div>
-            
-                        <!-- Botões de navegação -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-            
+            <section id="depoimentos">
+                <div class="testimonials">
+                    <div class="testemunha-content">
+                        <h2 class="section-title">
+                            DEPOIMENTOS
+                        </h2>
+                        <h3 class="subtitle">
+                            As opiniões de nossos clientes
+                        </h3>
                     </div>
-                </div>
-            </section>
 
-            <div id="divisor2"></div>
+                    <div class="feedbacks">
+                        <div class="feedback">
+                            <img src="recursos/imagens/pessoa1.png" class='avatar' alt="cliente">
+                            <div class="feedback-content">
+                                <p>
+                                    Indivíduo Humanoide
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
+                                </p>
+                            </div> 
+                        </div>
+                        
+                        <div class="feedback">
+                            <img src="recursos/imagens/pessoa2.png" class='avatar' alt="cliente">
+                            <div class="feedback-content">
+                                <p>
+                                    Indivíduo Humanoide
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <section id="testimonials">
-                <div class="testemunha-content">
-                    <h2 class="section-title">
-                        DEPOIMENTOS
-                    </h2>
-                    <h3 class="subtitle">
-                        As opiniões de nossos clientes
-                    </h3>
-                </div>
+                    <div class="feedbacks">
+                        <div class="feedback">
+                            <img src="recursos/imagens/pessoa3.png" class='avatar' alt="cliente">
+                            <div class="feedback-content">
+                                <p>
+                                    Indivíduo Humanoide
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="feedbacks">
-                    <div class="feedback">
-                        <img src="recursos/imagens/pessoa1.png" class='avatar' alt="cliente">
-                        <div class="feedback-content">
-                            <p>
-                                Indivíduo Humanoide
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
-                            </p>
-                        </div> 
+                        <div class="feedback">
+                            <img src="recursos/imagens/pessoa4.png" class='avatar' alt="cliente">
+                            <div class="feedback-content">
+                                <p>
+                                    Indivíduo Humanoide
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
+                                </p>
+                            </div>
+                        </div>
+
+
                     </div>
                     
-                    <div class="feedback">
-                        <img src="recursos/imagens/pessoa2.png" class='avatar' alt="cliente">
-                        <div class="feedback-content">
-                            <p>
-                                Indivíduo Humanoide
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feedbacks">
-                    <div class="feedback">
-                        <img src="recursos/imagens/pessoa3.png" class='avatar' alt="cliente">
-                        <div class="feedback-content">
-                            <p>
-                                Indivíduo Humanoide
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <img src="recursos/imagens/pessoa4.png" class='avatar' alt="cliente">
-                        <div class="feedback-content">
-                            <p>
-                                Indivíduo Humanoide
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam facilis nobis culpa beatae, amet vitae illum a dolor optio quos? Id, molestiae asperiores. Quibusdam debitis libero est id sapiente nesciunt?"
-                            </p>
-                    </div>
-                
+                    <button class="default-1">
+                        AVALIE TAMBÉM
+                    </button>
                 </div>
             </section>
 
-            <div id="divisor3"></div>
-
+            <div class="divisor3"></div>
             <footer> 
                 <div id="footer-items">
                     <p id="copyright">
@@ -334,7 +338,7 @@
                     </p>
 
                     <div id='social-footer' class="social-media">
-                        <a href="https://www.instagram.com/rosiellendepaula/" target="_blank">
+                        <a href="https://www.instagram.com/sifhair25/" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                         <a href="https://www.facebook.com/rosiellendepaulasifhair/" target="_blank">
@@ -347,6 +351,7 @@
                 </div>
             </footer>
         </main>
+
         <script src="recursos/javascript/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="recursos/javascript/services.js"></script>

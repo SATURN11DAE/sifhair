@@ -44,27 +44,14 @@ $(document).ready(function(){
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#shape', {
+    ScrollReveal().reveal('#forma', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
     });
 
-    ScrollReveal().reveal('.section_title', {
+    ScrollReveal().reveal('#services-title', {
         origin: 'left',
-        duration: 2000,
-        distance: '20%'
-    });
-    
-
-    ScrollReveal().reveal('#primeira', {
-        origin: 'left',
-        duration: 2000,
-        distance: '20%'
-    });
-
-    ScrollReveal().reveal('#segunda', {
-        origin: 'right',
         duration: 2000,
         distance: '20%'
     });
@@ -76,8 +63,21 @@ $(document).ready(function(){
     });
 
     ScrollReveal().reveal('.feedbacks', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('.feedbacks', {
         origin: 'right',
         duration: 2000,
         distance: '20%'
     });
+
+    ScrollReveal().reveal('.default-1', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
 });

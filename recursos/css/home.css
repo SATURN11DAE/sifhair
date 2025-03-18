@@ -58,6 +58,10 @@
     color: var(--color-primary-4);
 }
 
+.agenda {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1070px){
     #home{
         min-height: 100%;

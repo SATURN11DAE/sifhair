@@ -1,20 +1,31 @@
-#about{
+#about {
     width: 100%;
-    height: 75vh;
-    background-image: url('../imagens/about.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vh;
+    background-color: var(--color-primary-2);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    padding: 10px 100px; 
 }
 
-#about-content{
-    width: 45%;
+#forma {
+    background-color: var(--color-primary-1);
+    width: 40%; 
+    height: 85%;
+    position: relative;
+    border-radius: 40% 30% 20% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+
+#about-content {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     color: black;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1070px){
@@ -24,7 +35,7 @@
         justify-content: center;
     }
 
-    #shape{
+    #forma{
         display: none;
     }
     
