@@ -93,7 +93,7 @@ section{
     text-align: center;
 }
 
-.divisor3 {
+.divisor3, .divisor2 {
     width: 100%;
     height: 200px;
     background-image: url('../imagens/footer.svg');
@@ -103,8 +103,8 @@ section{
 
 .divisor2 {
     width: 100%;
-    height: 200px;
-    background-image: url('../imagens/services.svg');
+    height: 300px;
+    background-image: url('../imagens/footer.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
