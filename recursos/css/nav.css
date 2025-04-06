@@ -23,7 +23,7 @@ header{
 .menu-item a{
     text-decoration: none;
     font-weight: 700;
-    color: var(--color-primary-4);
+    color: black;
 }
 
 .menu-item.active a {

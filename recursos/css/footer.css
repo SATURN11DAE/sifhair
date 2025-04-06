@@ -1,9 +1,18 @@
 footer {
     width: 100%;
-    min-height: 10vh;
+    min-height: 50vh;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+footer .divisor3 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #footer-items {
@@ -14,7 +23,6 @@ footer {
     align-items: center;
     color: black;
     font-weight: 500;
-    position: absolute;
     bottom: 20px;
     font-weight: 600;
     left: 0;
